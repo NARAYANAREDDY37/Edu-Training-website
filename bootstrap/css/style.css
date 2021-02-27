@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.bg-edu {
+  background: linear-gradient(45deg, #0c5498, #2186db);
+}
+.text-edu {
+  color: #176ebb;
+}
+.bg-dark,
+.btn-dark {
+  background: linear-gradient(45deg, black, darkslategray);
+}
+.img-logo {
+  border-radius: 50%;
+  box-shadow: 0 0 5px black;
+}
+/* landing page section */
+.landing-section {
+  background: white url(../../images/bg-image.jpg) no-repeat scroll center;
+  background-size: cover;
+  height: 100vh;
+}
+.landing-wrapper {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+.landing-wrapper h1 {
+  font-size: 60px;
+}
+.landing-wrapper p {
+  font-size: 20px;
+}
+/* play button */
+.fa-play-circle {
+  color: #176ebb;
+  border: 3px solid transparent;
+  animation: glow-icon 0.8s infinite linear;
+  border-radius: 50%;
+}
+@keyframes glow-icon {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.08, 1.08);
+    box-shadow: 0 0 5px white;
+    border-radius: 50%;
+    border: 3px dotted white;
+  }
+}
+/* intro icon */
+.intro-icon {
+  background-color: black;
+  color: #176ebb;
+  border-radius: 50%;
+  box-shadow: 0 0 3px white;
+}
+/* image gallery */
+.img-gallery{
+    border-radius:50px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px black;
+    transition:all 0.5s;
+    cursor:pointer;
+    
+}
+.img-gallery:hover{
+    transform:scale(1.05,1.05);
+}
+.btn-outline-primary{
+    border-radius: 50px;
+}
+.btn-outline-primary:hover{
+    border: 2px solid #176ebb;
+    box-shadow: 0 0 10px #176ebb;
+}
+/* trainers section */
+.trainer-img{
+   margin-top:-50px;
+   box-shadow: 0 0 10px #176ebb;
+}
+.trainer-card{
+    border-radius:10px !important;
+    transition:all 0.5s;
+
+}
+.trainer-card:hover{
+    background: linear-gradient(45deg, #0c5498, #2186db)!important;
+    color: white;
+    transform:scale(1.05,1.05);
+}
